@@ -24,7 +24,7 @@ header h1 {
 header h1 .seo {
     color: #d9dcd6;
 }
-
+/*Wanted to change this from a div to a nav but doing so breaks the formatting. I am at this point still unsure why.*/
 header div {
     padding-top: 15px;
     margin-right: 20px;
