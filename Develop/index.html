@@ -1,15 +1,24 @@
+<!--
+Francis Jung
+3/8/23
+Homework Assignment #1
+-->
+
 <!DOCTYPE html>
 <html lang="en-us">
+<!--Added spaces between groups of elements for better readability-->
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!--Changed title from title-->
+    <!--Changed title from  generic title to company name, 
+    as well changed the order of head elements to increase readability-->
     <title>Horiseon</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="header">
+    <!--Changed div to semantic header element-->
+    <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
         <div>
             <ul>
@@ -24,24 +33,28 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </header>
+
     <div class="hero"></div>
+
     <div class="content">
-        <div class="search-engine-optimization">
+        <!--Made class tags less specific to avoid css redundancy-->
+        <!--Replaced class selectors with id selectors so the header links would still work-->
+        <div id="search-engine-optimization" class="feature">
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </div>
-        <div id="online-reputation-management" class="online-reputation-management">
+        <div id="online-reputation-management" class = feature>
             <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </div>
-        <div id="social-media-marketing" class="social-media-marketing">
+        <div id="social-media-marketing" class = feature>
             <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
@@ -49,22 +62,24 @@
             </p>
         </div>
     </div>
+
     <div class="benefits">
-        <div class="benefit-lead">
+        <!--Made class tags less specific to avoid css redundancy-->
+        <div class="benefit-section">
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png" />
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
         </div>
-        <div class="benefit-brand">
+        <div class="benefit-section">
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png" />
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
         </div>
-        <div class="benefit-cost">
+        <div class="benefit-section">
             <h3>Cost Management</h3>
             <img src="./assets/images/cost-management.png" />
             <p>
@@ -72,12 +87,14 @@
             </p>
         </div>
     </div>
-    <div class="footer">
+
+    <!--Changed div to the semantic footer element-->
+    <footer>
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
-    </div>
+    </footer>
 </body>
 
 </html>
